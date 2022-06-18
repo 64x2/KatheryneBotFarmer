@@ -1,7 +1,7 @@
 import discord
 from discord.ext.commands import Bot
 from discord.ext import commands
-import time
+import asyncio
 
 #TOKEN
 TOKEN = "token here"
@@ -18,37 +18,37 @@ async def on_ready():
 
 @b.command()
 async def wish(ctx, arg):
-    time.sleep(1)
+    await asyncio.sleep(1)
     await ctx.send(f"gwish {arg} noani")
     print("Sent gwish command")
-    time.sleep(17)
+    await asyncio.sleep(17)
     print("Repeating process...")
     await ctx.send(f".wish {arg}")
    
 @b.command()
 async def wishburst(ctx, arg):
-    time.sleep(1)
+    await asyncio.sleep(1)
     await ctx.send(f"gwish {arg} noani")
-    time.sleep(1)
+    await asyncio.sleep(1)
     await ctx.send(f"gwish {arg} noani")
-    time.sleep(1)
+    await asyncio.sleep(1)
     await ctx.send(f"gwish {arg} noani")
-    time.sleep(1)
+    await asyncio.sleep(1)
     await ctx.send(f"gwish {arg} noani")
-    time.sleep(1)
+    await asyncio.sleep(1)
     await ctx.send(f"gwish {arg} noani")
-    time.sleep(1)
+    await asyncio.sleep(1)
     await ctx.send(f"gwish {arg} noani")
-    time.sleep(1)
+    await asyncio.sleep(1)
     await ctx.send(f"gwish {arg} noani")
-    time.sleep(1)
+    await asyncio.sleep(1)
     await ctx.send(f"gwish {arg} noani")
-    time.sleep(1)
+    await asyncio.sleep(1)
     await ctx.send(f"gwish {arg} noani")
-    time.sleep(1)
+    await asyncio.sleep(1)
     await ctx.send(f"gwish {arg} noani")
     print("Burst complete, sleeping for 180 seconds...")
-    time.sleep(180)
+    await asyncio.sleep(180)
     print("Repeating process...")
     await ctx.send(f".wishburst {arg}")
 

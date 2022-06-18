@@ -19,8 +19,9 @@ async def on_ready():
 async def wish(ctx, arg):
     time.sleep(1)
     await ctx.send(f"gwish {arg} noani")
-    print("Sent again! Please wait 18 seconds until next command")
-    time.sleep(18)
+    print("Sent gwish command")
+    time.sleep(17)
+    print("Repeating process...")
     await ctx.send(f".wish {arg}")
 
 b.run(TOKEN, bot = False)
